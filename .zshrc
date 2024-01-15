@@ -1,3 +1,4 @@
+export GPG_TTY=$(tty)
 export STARSHIP_CONFIG=$HOME/.config/starship.toml
 
 alias merge="git pull origin master --no-edit"
