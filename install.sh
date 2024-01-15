@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
 echo "Dotfiles installation started..."
+CODESPACE_DOTFILES=$(cd "$(dirname "$0")" && pwd)
+
+echo $CODESPACE_DOTFILES
 
 ln -s -f "${CODESPACE_DOTFILES}/gitconfig.codespace" ~/.gitconfig
-ln -s -f "${CODESPACE_DOTFILES}/zshrc" ~/.zshrc
-# ln -s -f "${CODESPACE_DOTFILES}/aliases" ~/.aliases
+ln -s -f "${CODESPACE_DOTFILES}/zshrc.codespace" ~/.zshrc
 ln -s -f "${CODESPACE_DOTFILES}/.config/starship.toml" ~/starship.toml
 
 echo "Installing fonts..."

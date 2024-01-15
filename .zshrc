@@ -1,5 +1,4 @@
 export STARSHIP_CONFIG=$HOME/.config/starship.toml
-export STARSHIP_CACHE=$HOME/.starship/cache
 
 alias merge="git pull origin master --no-edit"
 alias rebase="git pull --rebase origin master"
