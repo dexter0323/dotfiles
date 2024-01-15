@@ -4,6 +4,7 @@ echo "Dotfiles installation started..."
 
 ln -s -f "${CODESPACE_DOTFILES}/gitconfig.codespace" ~/.gitconfig
 ln -s -f "${CODESPACE_DOTFILES}/zshrc" ~/.zshrc
+# ln -s -f "${CODESPACE_DOTFILES}/aliases" ~/.aliases
 ln -s -f "${CODESPACE_DOTFILES}/.config/starship.toml" ~/starship.toml
 
 echo "Installing fonts..."
