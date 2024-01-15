@@ -1,0 +1,28 @@
+[user]
+	name = Juan Sanchez
+	email = jsanchez@symphonysensa.com
+[commit]
+	gpgsign = true
+[core]
+	pager = cat
+	editor = vim
+[pager]
+	diff = less -FX
+[init]
+	defaultBranch = master
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	log4 = log -4 --oneline
+	log10 = log -10 --oneline
+	type = cat-file -t
+	dump = cat-file -p
+[pull]
+	rebase = false
