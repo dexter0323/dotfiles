@@ -1,16 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo "Dotfiles installation started..."
+# Change to dotfiles directory
+cd "$(dirname "$0")" || exit
 
-ln -s -f "${CODESPACE_DOTFILES}/gitconfig.codespace" ~/.gitconfig
-ln -s -f "${CODESPACE_DOTFILES}/zshrc" ~/.zshrc
-# ln -s -f "${CODESPACE_DOTFILES}/aliases" ~/.aliases
-ln -s -f "${CODESPACE_DOTFILES}/.config/starship.toml" ~/starship.toml
+# Create symbolic links
+ln -sf "$(pwd)/zsh/.zshrc" "$HOME/.zshrc"
+ln -sf "$(pwd)/git/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$(pwd)/starship/starship.toml" "$HOME/.config/starship.toml"
 
-echo "Installing fonts..."
-sudo apt-get -y install fonts-firacode
-
-echo "Setting up starship..."
-sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes
-
-echo "Dotfiles installation finished..."
+echo "Dotfiles installation complete!"
