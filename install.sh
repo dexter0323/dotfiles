@@ -6,7 +6,6 @@ cd "$(dirname "$0")" || exit
 # Create symbolic links
 ln -sf "$(pwd)/zsh/.zshrc" "$HOME/.zshrc"
 ln -sf "$(pwd)/git/.gitconfig" "$HOME/.gitconfig"
-ln -sf "$(pwd)/starship/starship.toml" "$HOME/.config/starship.toml"
 
 # Install zsh-syntax-highlighting
 echo "Installing zsh-syntax-highlighting..."
