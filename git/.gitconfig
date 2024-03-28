@@ -21,6 +21,8 @@
 	br = branch
 	reset1 = reset HEAD~1
 	pushfwl = push --force-with-lease
+	mergemaster = pull origin master --no-edit
+	rebasemaster = pull --rebase origin master
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	log4 = log -4 --oneline
 	log10 = log -10 --oneline
