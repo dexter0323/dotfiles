@@ -1,8 +1,6 @@
 [user]
 	name = Juan Sanchez
 	email = 14128083+dexter0323@users.noreply.github.com
-[commit]
-	gpgsign = true
 [core]
 	pager = cat
 	editor = vim
