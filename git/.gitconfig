@@ -3,7 +3,7 @@
 	email = 14128083+dexter0323@users.noreply.github.com
 [core]
 	pager = cat
-	editor = vim
+	editor = code
 [pager]
 	diff = less -FX
 [init]
@@ -28,3 +28,5 @@
 	dump = cat-file -p
 [pull]
 	rebase = false
+[commit]
+	gpgsign = true
