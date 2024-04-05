@@ -28,5 +28,3 @@
 	dump = cat-file -p
 [pull]
 	rebase = false
-[commit]
-	gpgsign = true
